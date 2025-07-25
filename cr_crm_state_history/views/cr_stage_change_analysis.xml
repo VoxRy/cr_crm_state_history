@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="cr_stage_change_analysis_action" model="ir.actions.act_window">
+        <field name="name">Stage Change Analysis</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cr.crm.stage.change.history</field>
+        <field name="view_mode">search,tree,pivot</field>
+        <field name="context">{'search_default_crm_lead_id':1,'search_default_stage_name':1}</field>
+    </record>
+
+    <menuitem id="cr_stage_change_analysis_menu"
+              name="Waiting Approval"
+              parent="crm.crm_menu_root"
+              action="cr_stage_change_analysis_action"
+              sequence="2"
+              groups="cr_crm_state_history.cr_group_access"/>
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cr_crm_stage_change_history,access_cr_crm_stage_change_history,model_cr_crm_stage_change_history,,1,1,1,1
+
+
+
+

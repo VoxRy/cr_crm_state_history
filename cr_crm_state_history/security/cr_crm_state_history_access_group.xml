@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+     <record id="cr_group_access" model="res.groups">
+        <field name="name">Enable CRM stage Change History</field>
+    </record>
+
+    <record id="create_record_rule_for_cr_crm_access" model="ir.rule">
+            <field name="name">Record rule for Enable Crm Stage Change History</field>
+            <field name="model_id" ref="cr_crm_state_history.model_cr_crm_stage_change_history"/>
+            <field name="domain_force">[(True,'=',True)]</field>
+            <field name="groups" eval="[(4, ref('cr_crm_state_history.cr_group_access'))]"/>
+    </record>
+</odoo>
