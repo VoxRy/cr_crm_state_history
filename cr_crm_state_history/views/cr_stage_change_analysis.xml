@@ -9,7 +9,7 @@
     </record>
 
     <menuitem id="cr_stage_change_analysis_menu"
-              name="Waiting Approval"
+              name="Stage Change Analysis"
               parent="crm.crm_menu_root"
               action="cr_stage_change_analysis_action"
               sequence="2"
